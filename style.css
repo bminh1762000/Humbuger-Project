@@ -1,0 +1,478 @@
+body {
+    font-family: 'Barlow Condensed', sans-serif; 
+}
+*::selection{
+    background-color: #ffbf00;
+    color: black;
+}
+/* header */
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url("imagesphoto/header-img.jpeg");
+
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+.nav-menu{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+    padding: 30px;
+}
+.menu-items{
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: 0.7s;
+}
+.link-active{
+    color: #ffbf00;
+    
+}
+.menu-items:hover{
+    color: #fcc72a;
+}
+.line-1,.line-2,.line-3{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.5s;
+}
+.change .line-1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line-2{
+    transform: rotate(45deg);
+}
+.change .line-3{
+    opacity: 0;
+}
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.title-banner{
+    font-size: 20px;
+}
+/* Our mission */
+.mission{
+    padding-bottom: 120px;
+    padding-top: 60px;
+}
+.content{
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.themecolor{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffbf00;
+    letter-spacing: 0px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 15px 0;
+}
+.themecolor-title{
+    font-size: 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+}
+/* overview */
+.overview{
+    background-color: #f8f4ed;
+    background-image: url("imagesphoto/foodtruck-sectionbg1.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about{
+    display: inline-block;
+    color: black;
+    padding: 3px 15px;
+    background-color: #bdc3c7;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.about-header{
+    color: #ffbf00;
+    font-size: 5.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 90px;
+}
+.text-about{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 30px;
+}
+.btn-menu{
+    position: relative;
+    padding: 12px 40px;
+    color: white;
+    background-color: #ffbf00;
+    font-size: 19px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.btn-menu::before{
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 1px;
+    background-color: white;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%);
+    border-radius: 50%;
+}
+.btn-menu::after{
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 1px;
+    top: 50%;
+    right: 20px;
+    background-color: white;
+    transform: translate(0 -50%);
+}
+.btn-menu:hover{
+    background-color: #df9d00;
+}
+/* Our Menu */
+.our-menu{
+    padding-top: 120px;
+    background-color: black;
+}
+.content-menu{
+    margin-bottom: 100px;
+}
+.price-list{
+    border: 2px solid white;
+    margin-bottom: 150px;
+    position: relative;
+}
+.food-burger{
+    padding: 30px 0;
+    border-bottom: 2px solid white;
+}
+.foodtruck-heading{
+    display: inline-block;
+    padding: 3px 15px;
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.foodtruck-content{
+    color: #ffbf00;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.img-wrapper-top{
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.img-wrapper-1{
+    padding-top: 50px;
+}
+.list-food-menu{
+    border-bottom: 1px solid #262626;
+    margin-bottom: 15px;
+}
+.food-menu{
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.pricing-menu{
+    color: #ffbf00;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 0;
+}
+/* Event */
+.event{
+    padding: 100px 0;
+    background-image: url("imagesphoto/foodtruck-sectionbg2.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-color: #f8f3ec;
+}
+.inner-event{
+    margin-bottom: 90px;
+    margin-top: 20px;
+}
+.content-event{
+    background-image: url("imagesphoto/foodtruck-wrapbg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    padding: 150px 0;
+    position: relative;
+}
+.head-event{
+    display: inline-block;
+    padding: 3px 15px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.title-event{
+    color: #ffbf00;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 1.5px;
+}
+.content-event::before{
+    position: absolute;
+    content: "";
+    width: auto;
+    height: auto;
+    border: 2px solid #df9d00;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+}
+.list-events{
+    margin-bottom: 60px;
+}
+.list-event{
+    border-bottom: 1px solid #e7e2d8;
+    padding: 15px 0;
+}
+.date-event{
+    margin: 0;
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+.locate-event{
+    margin: 0;
+    color: #ffbf00;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.btn-meet{
+    position: relative;
+    padding: 13px 40px;
+    background-color: black;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    box-shadow: 5px 1px 13px #262626;
+    transition: transform 0.5s;
+}
+.btn-meet::before{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 1.5px;
+    background-color: white;
+    top: 50%;
+    left: 22px;
+}
+.btn-meet::after{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 1.5px;
+    background-color: white;
+    top: 50%;
+    right: 22px;
+}
+.btn-meet:hover{
+    transform: translate(-2px,-1px);
+    box-shadow: 5px 2px 15px #262626;
+}
+/* Our company */
+.company{
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.company-heading{
+    display: inline-block;
+    padding: 3px 15px;
+    background-color: #f8f3ec;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.company-content{
+    color: #ffbf00;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 90px;
+}
+.feature{
+    color: black;
+    line-height: 90px;
+    font-size: 90px;
+    font-weight: 70px;
+    margin-bottom: 0;
+    position: relative;
+}
+.hr_narrow{
+    width: 40%;
+    background-color: rgba(0, 0, 0, .08);
+    margin-top: 0;
+}
+.feature-name{
+    font-size: 17px;
+    line-height: 30px;
+}
+/* newdish */
+.newdish{
+    height: 650px;
+    max-width: 100%;
+}
+.part1{
+    width: 50%;
+    background-image: url("https://themes.muffingroup.com/be/foodtruck/wp-content/uploads/2020/01/foodtruck-wrapbg3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f3ec;
+    position: relative;
+}
+.part2{
+    width: 50%;
+    background-image: url("imagesphoto/foodtruck-wrapbg3.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: none;
+}
+.f-dish{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.dish-heading{
+    display: inline-block;
+    color: black;
+    background-color: #fff;
+    padding: 5px 18px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.dish-content{
+    color: black;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 90px;
+    letter-spacing: 2.5px;
+}
+.dish-text{
+    color: #fcc72a;
+    font-size: 83px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 90px;
+    letter-spacing: 2.5px;
+    vertical-align: baseline;
+}
+/* employees */
+.employees{
+    background-image: url("imagesphoto/foodtruck-sectionbg5.jpg");
+    padding-top: 100px ;
+    padding-bottom: 70px;
+}
+.employees-content{
+    margin-bottom: 50px;
+}
+.em-heading{
+    display: inline-block;
+    padding: 5px 18px;
+    color: black;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.em-content{
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffbf00;
+}
+.img-team{
+    margin-bottom: 38px;
+}
+.em-name{
+    color: #ffbf00;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.em-resume{
+    color: white;
+    font-size: 18px;
+}
+/* information */
+.info-company{
+    background-color: #ffbf00;
+    padding: 100px 0;
+}
+.img-brand{
+    margin-bottom: 50px;
+}
+.information{
+    color: black;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.info-detail{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+    letter-spacing: 1.05px;
+}
+.social{
+    border: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.icon-media{
+    color: #ffbf00;
+}
